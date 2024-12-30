@@ -1,15 +1,15 @@
-// components/ProductFeature.jsx
+import Image from "next/image";
 export default function UniqueP() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
           
           {/* Left Section: Image */}
           <div className="relative">
             <div className="absolute inset-0 bg-pink-100 rounded-full w-96 h-96 -z-10 mx-auto"></div>
-            <img
-              src="/my-blue.png" 
+            <Image
+              src="/my-blue.png" width={458} height={450}
               alt="Stylish Chair"
               className="mx-auto rounded-lg shadow-lg"
             />

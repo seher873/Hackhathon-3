@@ -1,4 +1,6 @@
-// components/Footer.js
+import Link from "next/link";
+
+
 const Footer = () => {
   return (
     <footer className="bg-gray-100 text-gray-700 py-10 px-6">
@@ -12,13 +14,13 @@ const Footer = () => {
               placeholder="Enter Email Address"
               className="w-full px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none"
             />
-            <button className="bg-pink-500 text-white px-4 py-2 rounded-r-md">
+            <button className="bg-pink-500 text-white px-4 py-2 rounded-r-md "><Link href="/signup"></Link>
               Sign Up
             </button>
           </div>
           <p className="mt-4 text-sm">
             Contact Info <br />
-            17 Princess Road, London, Greater London NW1 8JR, UK
+            17 Princess Road, London, Greater London NW1 8JR, Uk
           </p>
         </div>
 
@@ -48,11 +50,11 @@ const Footer = () => {
 
         {/* Pages */}
         <div>
-          <h2 className="text-lg font-semibold mb-4">Pages</h2>
-          <ul className="space-y-2">
-            <li>Blog</li>
-            <li>Browse the Shop</li>
-            <li>Category</li>
+          <h2 className="text-lg font-semibold mb-4 ">Pages</h2>
+          <ul className="space-y-2  text-blue-950 hover:underline">
+            <li><Link href="/blog">Blog</Link></li>
+            <Link href="/shopList"><li>Browse the Shop</li></Link>
+            <li><Link href="">Category</Link></li>
             <li>Pre-Built Pages</li>
             <li>Visual Composer Elements</li>
             <li>WooCommerce Pages</li>

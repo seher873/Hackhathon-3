@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 function FeaturedProducts() {
   return (
-    <div className="w-full bg-white py-20">
+    <div className="w-full bg-white px-6 py-20">
       {/* Heading */}
       <h2 className="text-black text-4xl text-center mb-16 font-bold">Featured Products</h2>
 

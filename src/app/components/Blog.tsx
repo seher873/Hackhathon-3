@@ -1,7 +1,7 @@
 import React from "react";
-
+import Image from "next/image";
 const LatestBlog = () => {
-  return (
+  return (                                             
     <section className="py-10 px-6">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-8">
@@ -11,8 +11,8 @@ const LatestBlog = () => {
           {/* Blog 1 */}
           <div className="border rounded-xl p-4 bg-white shadow-md">
             <div className="w-full h-40 flex items-center justify-center overflow-hidden rounded-lg">
-              <img
-                src="/JIUjvqe2ZHg.png"
+              <Image
+                src="/JIUjvqe2ZHg.png"width={50}height={50}
                 alt="Design Trends 2024"
                 className="object-contain w-full h-full"
               />
@@ -30,8 +30,8 @@ const LatestBlog = () => {
           {/* Blog 2 */}
           <div className="border rounded-xl p-4 bg-white shadow-md">
             <div className="w-full h-40 flex items-center justify-center overflow-hidden rounded-lg">
-              <img
-                src="/blog-2.png"
+              <Image
+                src="/blog-2.png" width={50}height={50}
                 alt="Minimalist Interiors"
                 className="object-contain w-full h-full"
               />
@@ -49,8 +49,8 @@ const LatestBlog = () => {
           {/* Blog 3 */}
           <div className="border rounded-xl p-4 bg-white shadow-md">
             <div className="w-full h-40 flex items-center justify-center overflow-hidden rounded-lg">
-              <img
-                src="/blg3.png"
+              <Image
+                src="/blg3.png"width={100} height={100}
                 alt="Smart Home Gadgets"
                 className="object-contain w-full h-full"
               />

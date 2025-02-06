@@ -8,7 +8,7 @@ export default function Shopics() {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Card 1 */}
-          <div className="bg-white p-6 rounded-lg shadow-md text-center">
+          <div className="bg-white p-6 rounded-lg shadow-md text-center  ">
             <div className="text-4xl mb-4">🚚</div>
             <h3 className="text-xl font-semibold mb-2">24/7 Support</h3>
             <p className="text-gray-600 text-sm">
@@ -16,7 +16,7 @@ export default function Shopics() {
             </p>
           </div>
           {/* Card 2 */}
-          <div className="bg-white p-6 rounded-lg shadow-md text-center">
+          <div className="bg-white p-6 rounded-lg shadow-md text-center ">
             <div className="text-4xl mb-4">📦</div>
             <h3 className="text-xl font-semibold mb-2">24/7 Support</h3>
             <p className="text-gray-600 text-sm">
@@ -32,7 +32,7 @@ export default function Shopics() {
             </p>
           </div>
           {/* Card 4 */}
-          <div className="bg-white p-6 rounded-lg shadow-md text-center">
+          <div className="bg-white p-6 rounded-lg shadow-md text-center  transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-[#F3F3F3]">
             <div className="text-4xl mb-4">⏰</div>
             <h3 className="text-xl font-semibold mb-2">24/7 Support</h3>
             <p className="text-gray-600 text-sm">

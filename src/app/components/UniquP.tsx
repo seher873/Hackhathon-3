@@ -7,7 +7,7 @@ export default function UniqueP() {
           
           {/* Left Section: Image */}
           <div className="relative">
-            <div className="absolute inset-0 bg-pink-100 rounded-full w-96 h-96 -z-10 mx-auto"></div>
+            <div className="absolute inset-0 bg-pink-100 rounded-full w-48 h-48 -z-10 mx-auto"></div>
             <Image
               src="/my-blue.png" width={458} height={450}
               alt="Stylish Chair"

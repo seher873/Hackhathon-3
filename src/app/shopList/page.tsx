@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { AiFillStar, AiOutlineHeart, AiOutlineShoppingCart } from "react-icons/ai";
 import { BsSearch } from "react-icons/bs";
+import Link from "next/link";
 
 export default function ProductList() {
   const products = [
@@ -115,7 +116,7 @@ export default function ProductList() {
               {/* Icons */}
               <div className="flex items-center space-x-4 mt-4">
                 <AiOutlineHeart className="text-gray-600 text-xl cursor-pointer hover:text-red-500" />
-                <BsSearch className="text-gray-600 text-xl cursor-pointer hover:text-blue-500" />
+                <Link href="/cart"> <BsSearch className="text-gray-600 text-xl cursor-pointer hover:text-blue-500" /></Link>
                 <AiOutlineShoppingCart className="text-gray-600 text-xl cursor-pointer hover:text-green-500" />
               </div>
             </div>

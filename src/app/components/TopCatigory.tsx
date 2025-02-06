@@ -15,7 +15,8 @@ export default function TopCategory() {
             <Image
               src="/new.png"width={50} height={50}
               alt="chair-pic"
-              className="w-full h-full object-cover rounded"
+              className="w-full h-full object-cover rounded cursor-pointer shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-[#F3F3F3]"
+          
             />
           </div>
           <h3 className="text-center text-lg font-semibold text-gray-700 mt-4">
@@ -30,7 +31,8 @@ export default function TopCategory() {
             <Image
               src="/image 1168.png"width={50} height={50}
               alt="Mini LCW Chair"
-              className="w-full h-full object-cover rounded"
+              className="w-full h-full object-cover rounded cursor-pointer shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-[#F3F3F3]"
+          
             />
           </div>
           <h3 className="text-center text-lg font-semibold text-gray-700 mt-4">
@@ -45,7 +47,8 @@ export default function TopCategory() {
             <Image
               src="/image 1171.png"width={50} height={50}
               alt="Mini LCW Chair"
-              className="w-full h-full object-cover rounded"
+              className="w-full h-full object-cover rounded cursor-pointer shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-[#F3F3F3]"
+          
             />
           </div>
           <h3 className="text-center text-lg font-semibold text-gray-700 mt-4">
@@ -60,7 +63,8 @@ export default function TopCategory() {
             <Image
               src="/new.png"width={50} height={50}
               alt="Mini LCW Chair"
-              className="w-full h-full object-cover rounded"
+              className="w-full h-full object-cover rounded cursor-pointer shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-[#F3F3F3]"
+          
             />
           </div>
           <h3 className="text-center text-lg font-semibold text-gray-700 mt-4">
@@ -78,3 +82,4 @@ export default function TopCategory() {
     </div>
   );
 }
+

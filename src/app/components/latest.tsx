@@ -8,7 +8,7 @@ const Latest = () => {
         Product Showcase
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <div className="border border-gray-200 rounded-lg shadow-md p-4 bg-white relative">
+        <div className="border border-gray-200 rounded-lg shadow-md p-4 bg-white relative transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-[#F3F3F3]">
           <Image
             src="/image 1166.png"
             alt="Comfort Handy Craft"
@@ -28,7 +28,7 @@ const Latest = () => {
           </span>
         </div>
 
-        <div className="border border-gray-200 rounded-lg shadow-md p-4 bg-white relative">
+        <div className="border border-gray-200 rounded-lg shadow-md p-4 bg-white relative transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-[#F3F3F3]">
           <Image
             src="/image 15.png"
             alt="Comfort Handy Craft"
@@ -48,7 +48,7 @@ const Latest = () => {
           </span>
         </div>
 
-        <div className="border border-gray-200 rounded-lg shadow-md p-4 bg-white relative">
+        <div className="border border-gray-200 rounded-lg shadow-md p-4 bg-white relative transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-[#F3F3F3]">
           <Image
             src="/image 1168.png"
             alt="Comfort Handy Craft"
@@ -65,7 +65,7 @@ const Latest = () => {
           </p>
         </div>
 
-        <div className="border border-gray-200 rounded-lg shadow-md p-4 bg-white relative">
+        <div className="border border-gray-200 rounded-lg shadow-md p-4 bg-white relativetransition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-[#F3F3F3]">
           <Image
             src="/image 23.png"
             alt="Comfort Handy Craft"
@@ -82,7 +82,7 @@ const Latest = () => {
           </p>
         </div>
 
-        <div className="border border-gray-200 rounded-lg shadow-md p-4 bg-white relative">
+        <div className="border border-gray-200 rounded-lg shadow-md p-4 bg-white relative transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-[#F3F3F3]">
           <Image
             src="/image 32 (1).png"
             alt="Comfort Handy Craft"
@@ -99,7 +99,7 @@ const Latest = () => {
           </p>
         </div>
 
-        <div className="border border-gray-200 rounded-lg shadow-md p-4 bg-white relative">
+        <div className="border border-gray-200 rounded-lg shadow-md p-4 bg-white relative transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-[#F3F3F3]">
           <Image
             src="/image 3.png"
             alt="Comfort Handy Craft"

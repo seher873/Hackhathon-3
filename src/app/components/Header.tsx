@@ -25,7 +25,7 @@ const Header = () => {
   const [currency, setCurrency] = useState("USD");
   const [showLangDropdown, setShowLangDropdown] = useState(false);
   const [showCurrencyDropdown, setShowCurrencyDropdown] = useState(false);
-  const [showPagesDropdown, setShowPagesDropdown] = useState(false); 
+  const [showPagesDropdown, setShowPagesDropdown] = useState(false);
 
   const filteredProducts = searchTerm
     ? products.filter((product) =>
@@ -36,22 +36,22 @@ const Header = () => {
   return (
     <header className="bg-purple-600 text-white">
       {/* Top Bar */}
-      <div className="flex justify-between items-center px-4 py-2 text-sm">
-        <div className="flex items-center space-x-4">
+      <div className="flex flex-wrap justify-between items-center px-4 py-2 text-sm">
+        <div className="flex flex-wrap justify-center md:justify-start items-center space-x-4">
           <div className="flex items-center space-x-1">
             <FaEnvelope />
-            <span>mhiaxonu@gmail.com</span>
+            <span className="text-xs sm:text-sm">mhiaxonu@gmail.com</span>
           </div>
           <div className="flex items-center space-x-1">
             <FaPhoneAlt />
-            <span>(123) 456 7890</span>
+            <span className="text-xs sm:text-sm">(123) 456 7890</span>
           </div>
         </div>
 
-        {/* Right Section (Dropdowns & Icons) */}
+        {/* Right Section */}
         <div className="flex items-center space-x-4 relative">
-          {/* Language Dropdown */}
-          <div className="relative">
+          {/* Language Dropdown - Hide on Mobile */}
+          <div className="relative hidden md:block">
             <button
               className="flex items-center space-x-1"
               onClick={() => setShowLangDropdown(!showLangDropdown)}
@@ -77,8 +77,8 @@ const Header = () => {
             )}
           </div>
 
-          {/* Currency Dropdown */}
-          <div className="relative">
+          {/* Currency Dropdown - Hide on Mobile */}
+          <div className="relative hidden md:block">
             <button
               className="flex items-center space-x-1"
               onClick={() => setShowCurrencyDropdown(!showCurrencyDropdown)}
@@ -107,10 +107,9 @@ const Header = () => {
           {/* Icons */}
           <Link href="/signUp" className="flex items-center space-x-1">
             <FaUser />
-            <span>Login</span>
+            <span className="hidden sm:inline">Login</span>
           </Link>
-          
-          
+
           <Link href="/cart" className="relative">
             <FaShoppingCart />
           </Link>
@@ -118,10 +117,11 @@ const Header = () => {
       </div>
 
       {/* Navbar */}
-      <nav className="flex justify-between items-center px-4 py-3 bg-white text-black">
+      <nav className="flex flex-wrap justify-between items-center px-4 py-3 bg-white text-black">
         <Link href="/">
           <h1 className="text-2xl font-bold cursor-pointer">Hekto</h1>
         </Link>
+
         <ul className="hidden md:flex space-x-6 text-sm font-medium">
           <li className="text-purple-600">
             <Link href="/">Home</Link>
@@ -162,7 +162,7 @@ const Header = () => {
         </ul>
 
         {/* Search Bar */}
-        <div className="relative w-64">
+        <div className="relative w-full md:w-64 mt-2 md:mt-0">
           <input
             type="text"
             placeholder="Search..."
@@ -173,6 +173,7 @@ const Header = () => {
           <button className="absolute right-2 top-2 text-pink-500">
             <MdSearch size={20} />
           </button>
+
           {/* Search Results */}
           {searchTerm && filteredProducts.length > 0 && (
             <ul className="absolute top-full left-0 w-full bg-white text-black border border-gray-300 shadow-md rounded-md mt-1 z-50">
